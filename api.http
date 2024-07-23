@@ -1,0 +1,32 @@
+GET http://localhost:5500/api/v1/user/dsđfdsfdsfds
+
+###
+POST  http://localhost:5500/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "email": "admin2@gmail",
+    "password": "123456"
+}
+
+###
+POST  http://localhost:5500/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+GET   http://localhost:5500/api/v1/user/
+Authorization:Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZV9jb2RlIjoiUjMiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTcxMTA5NjgzNSwiZXhwIjoxNzExNTI4ODM1fQ.LeGMtgC2LJjx-kRpqH_i8xzbizCbUSLHZ6TOdAx8YGo
+
+###
+GET   http://localhost:5500/api/v1/insert/
+
+###
+GET   http://localhost:5500/api/v1/book/?order[]=price&order[]=DESC&limit=2&page=2
+###
+POST    http://localhost:5500/api/v1/book/
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZV9jb2RlIjoiUjMiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ1MzYxNywiZXhwIjoxNzExODg1NjE3fQ.cFh_KY10y7H9AdcMelZDYIgu2XCOvLX6vXJ9cZEN33A
